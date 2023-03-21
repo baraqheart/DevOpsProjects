@@ -1,3 +1,8 @@
+# Containerize a simple website 
+### Tools
+- docker
+- ec2 or vm
+- dockerhub account
 
 # STAGE 1
 ### launch an instance (ec2 or vm)
