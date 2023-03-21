@@ -157,6 +157,11 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
   - press ctlr + k, to delete each line, and replace the space a randomly generated phrase through this link below
   # https://api.wordpress.org/secret-key/1.1/salt/
   
+- Save and close the configuration file by typing `ctrl+x` followed by y then enter.
+# 7. Configure WordPress
+- Open http://localhost/ in your browser. You will be asked for title of your new site, username, password, and address e-mail. Note that the username and password you - choose here are for WordPress, and do not provide access to any other part of your server - choose a username and password that are different to your MySQL
+- - -(database) credentials, that we configured for WordPress’ use, and different to your credentials for logging into your computer or server’s desktop or shell. 
+  
 
   
 
