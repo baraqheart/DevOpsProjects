@@ -84,5 +84,79 @@ sudo a2dissite 000-default
 sudo service apache2 reload
 ```
 
+# 5. Configure database
 
+-To configure WordPress, we need to create MySQL database. Let’s do it!
+
+`
+$ sudo mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 7
+Server version: 5.7.20-0ubuntu0.16.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE wordpress;
+Query OK, 1 row affected (0,00 sec)
+
+mysql> CREATE USER wordpress@localhost IDENTIFIED BY '<your-password>';
+Query OK, 1 row affected (0,00 sec)
+
+mysql> GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER
+    -> ON wordpress.*
+    -> TO wordpress@localhost;
+Query OK, 1 row affected (0,00 sec)
+
+mysql> FLUSH PRIVILEGES;
+Query OK, 1 row affected (0,00 sec)
+
+mysql> quit
+Bye
+`
+
+- Enable MySQL with sudo service mysql start
+
+# 6. Configure WordPress to connect to the database
+
+- Now, let’s configure WordPress to use this database. First, copy the sample configuration file to `wp-config.php` :
+
+```
+sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
+```
+
+-Next, set the database credentials in the configuration file (do not replace database_name_here or username_here in the commands below. Do replace <your-password> with your database password.):
+  
+```
+  sudo -u www-data sed -i 's/database_name_here/wordpress/' /srv/www/wordpress/wp-config.php
+sudo -u www-data sed -i 's/username_here/wordpress/' /srv/www/wordpress/wp-config.php
+sudo -u www-data sed -i 's/password_here/<your-password>/' /srv/www/wordpress/wp-config.php
+ ```
+
+ -  Finally, in a terminal session open the configuration file in nano:
+
+`  sudo -u www-data nano /srv/www/wordpress/wp-config.php  `
+  
+- Find the following:
+
+`
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' ); 
+  `
+  - press ctlr + k, to delete each line, and replace the space a randomly generated phrase through this link below
+  # https://api.wordpress.org/secret-key/1.1/salt/
+  
+
+  
 
