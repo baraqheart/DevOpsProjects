@@ -86,9 +86,10 @@ sudo service apache2 reload
 
 # 5. Configure database
 
--To configure WordPress, we need to create MySQL database. Let’s do it!
+- To configure WordPress, we need to create MySQL database. Let’s do it!
 
-`
+
+```
 $ sudo mysql -u root
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 7
@@ -117,8 +118,7 @@ mysql> FLUSH PRIVILEGES;
 Query OK, 1 row affected (0,00 sec)
 
 mysql> quit
-Bye
-`
+Bye```
 
 - Enable MySQL with sudo service mysql start
 
@@ -130,7 +130,7 @@ Bye
 sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
 ```
 
--Next, set the database credentials in the configuration file (do not replace database_name_here or username_here in the commands below. Do replace <your-password> with your database password.):
+- Next, set the database credentials in the configuration file (do not replace database_name_here or username_here in the commands below. Do replace <your-password> with your database password.):
   
 ```
   sudo -u www-data sed -i 's/database_name_here/wordpress/' /srv/www/wordpress/wp-config.php
