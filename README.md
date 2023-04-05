@@ -1,20 +1,20 @@
 # DevOpsProjects
 
-- project_one : LAMP stack
-- project_two : Build a book application on MEAN sstack
-- project_three : LEMP and MERN stack app deployment
-- project_four : Host a static website on ec2 and s3 seperately
-- project_five : 3-tier application
-- project_six: Deploy wordpress site on ec2 or vm
-- project_seven: Containerize a simple website or vm
-- project_eight: containerize  a multi-tier project
-- project_nine: deploy jenkins, sonarqube and nexus on ec2 servers
-- project_ten : connect slack notification to project_nine
+- project_one : Host a static website locally
+- project_two : Host a wordpress site locally
+- project_three : Host a wulti tier locally
+- project_four : Deploy a simple website on ec2 
+- project_five : Host a static website on s3
+- project_six: Deploy wordpress site on ec2 
+- project_seven: lift and shift project for a multi tier website
+- project_eight: Containerize a simple website or vm
+- project_nine: containerize  a multi-tier project 
+- project_ten : containarize a js application
 - project_eleven : CICD project with jenkins
 - project_twelve : CICD project on AWS
 - project_thirteen : build SErverless web application
-- project_fourteen : 
-- project_fifteen :
+- project_fourteen : deploy jenkins, sonarqube and nexus on ec2 servers
+- project_fifteen :connect slack notification to project_nine
 - project_sixteen :
 - project_seveenteen :
 - project_eiteen :
