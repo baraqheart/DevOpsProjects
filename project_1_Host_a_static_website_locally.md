@@ -18,8 +18,11 @@ vagrant init
 ```
 
 now you should recieved a response that its successful
+***
+![a1.png](https://github.com/baraqheart/HandsOn/blob/aba63d57355432119a1bfd8d0237e210aa4059ea/project_1/a1.PNG)
 
 ***
+
 ### Configure the Virtual machine
 
 now type `ls ` to see the new contents of the directory
@@ -31,14 +34,15 @@ choose any one you preffer, we are going for "geerlingguy/centos7" now replace i
 - we gave our machine name vm01 
 - remove the # symbol to uncomment the desired line
 -such as private ip address and specified
-
+***
+![editpage](https://github.com/baraqheart/HandsOn/blob/8f3c2035b029c9f0feb9bd63634f0f1df83cc5bf/project_1/a2.PNG)
 
 bring up our machine with `vagrant up`
 
 now you will see this 
 
+![vm](https://github.com/baraqheart/HandsOn/blob/8f3c2035b029c9f0feb9bd63634f0f1df83cc5bf/project_1/a6.PNG)
 ***
-![a1.png](https://github.com/baraqheart/HandsOn/blob/aba63d57355432119a1bfd8d0237e210aa4059ea/project_1/a1.PNG)
 
 now let us login to our vm and install our website on the server
 
@@ -67,6 +71,6 @@ systemctl restart httpd
 ```
 
 ***
-
+![homepage](https://github.com/baraqheart/HandsOn/blob/8f3c2035b029c9f0feb9bd63634f0f1df83cc5bf/project_1/a7.PNG)
 
 
