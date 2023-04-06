@@ -20,6 +20,7 @@ vagrant init
 now you should recieved a response that its successful
 
 ***
+### Configure the Virtual machine
 
 now type `ls ` to see the new contents of the directory
 ` vi Vagrantfile `  to make changes to our file in order to configure the file
@@ -36,7 +37,7 @@ bring up our machine with `vagrant up`
 now you will see this 
 
 ***
-[a1.png](https://github.com/baraqheart/HandsOn/blob/aba63d57355432119a1bfd8d0237e210aa4059ea/project_1/a1.PNG)
+`![a1.png](https://github.com/baraqheart/HandsOn/blob/aba63d57355432119a1bfd8d0237e210aa4059ea/project_1/a1.PNG)`
 
 now let us login to our vm and install our website on the server
 
