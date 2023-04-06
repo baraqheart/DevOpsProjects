@@ -2,6 +2,8 @@
 in this project we will launch a virtual machine and install the wordpresite on it 
 follow the steps on getting started with vagrant from [project1](https://github.com/baraqheart/DevOpsProjects/blob/ad776104f7aca684ffb1b7659fa4380f5f391c8f/project_1_Host_a_static_website_locally.md)
 
+one you initialize your machine and its up, edit the vagrantfile to configure it to install wordpress automatically
+
 `vim Vagrantfile`
 
 and copy or compare the scripts to file your scripts
@@ -112,7 +114,8 @@ end
 
 
 ***
-we will now access our wordpress site via the web browser on ip addr 192.168.33.98
+- lets run `vagrant up` to bring up our vm
+- and then, we will now access our wordpress site via the web browser on ip addr 192.168.33.98
 
 
 
