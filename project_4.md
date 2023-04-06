@@ -66,7 +66,7 @@ systemctl restart httpd
 
 - note the ip address keeps changing as it is not static
 
-(![home]https://github.com/baraqheart/HandsOn/blob/8f3c2035b029c9f0feb9bd63634f0f1df83cc5bf/project_4/a9.PNG)
+![home](https://github.com/baraqheart/HandsOn/blob/8f3c2035b029c9f0feb9bd63634f0f1df83cc5bf/project_4/a9.PNG)
 
 
 ## Load Balancer with EC2
