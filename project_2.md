@@ -106,7 +106,7 @@ Vagrant.configure("2") do |vm02|
    sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
    sudo -u www-data sed -i 's/database_name_here/wordpress/' /srv/www/wordpress/wp-config.php
    sudo -u www-data sed -i 's/username_here/wordpress/' /srv/www/wordpress/wp-config.php
-   sudo -u www-data sed -i 's/password_here/admin123/' /srv/www/wordpress/wp-config.php
+   sudo -u www-data sed -i 's/password_here/myadmin/' /srv/www/wordpress/wp-config.php
    service mysql restart
    SHELL
 end
