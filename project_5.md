@@ -30,9 +30,11 @@ Amazon S3 (Simple Storage Service) is a highly scalable object storage service t
 ![enabled](https://github.com/baraqheart/HandsOn/blob/aeb77a4108741a38fff34e865dc11d53bd707400/project_5/s5.PNG)
 
 
--the url is thrown an error page
+- the url is thrown an error page
 ![err](https://github.com/baraqheart/HandsOn/blob/aeb77a4108741a38fff34e865dc11d53bd707400/project_5/s6.PNG)
 
+- and its working now because and ticked make it public
+![working](https://github.com/baraqheart/HandsOn/blob/3667f706552297083116cac488f5274c5fbdf176/project_5/s7.PNG)
 
 It's not necessarily that hosting a static site on Amazon S3 is inherently cost-ineffective, but rather that it may become more expensive than alternative options depending on the traffic and usage of the site.
 
