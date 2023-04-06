@@ -1,22 +1,22 @@
 # DevOpsProjects
 
-- project_one : Host a static website locally
-- project_two : Host a wordpress site locally
-- project_three : Host a wulti tier locally
-- project_four : Deploy a simple website on ec2 
-- project_five : Host a static website on s3
-- project_six: Deploy wordpress site on ec2 
-- project_seven: lift and shift project for a multi tier website
-- project_eight: Containerize a simple website or vm
-- project_nine: containerize  a multi-tier project 
-- project_ten : containarize a js application
-- project_eleven : CICD project with jenkins
-- project_twelve : CICD project on AWS
-- project_thirteen : build SErverless web application
-- project_fourteen : deploy jenkins, sonarqube and nexus on ec2 servers
-- project_fifteen :connect slack notification to project_nine
-- project_sixteen :
-- project_seveenteen :
-- project_eiteen :
-- project_nineteen :
-- project_twenty :
+- project_1 : Host a static website locally
+- project_2 : Host a wordpress site locally
+- project_3 : Automate the a multi tier application deployment locally
+- project_4 : Deploy a simple website on ec2 
+- project_5 : Host a static website on s3
+- project_6: Deploy wordpress site on ec2 
+- project_7: lift and shift project for a multi tier website
+- project_8t: Containerize a simple website or vm
+- project_9: containerize  a multi-tier project 
+- project_10 : containarize a js application
+- project_11 : CICD project with jenkins
+- project_12 : CICD project on AWS
+- project_13 : build SErverless web application
+- project_14 : deploy jenkins, sonarqube and nexus on ec2 servers
+- project_15 :connect slack notification to project_nine
+- project_16 :
+- project_18 :
+- project_19 :
+- project_20 :
+- project_21 :
