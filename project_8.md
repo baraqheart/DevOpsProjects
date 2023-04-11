@@ -3,25 +3,23 @@ in this project, we will containerize a flask project in few steps
 
 goto [dockerdemo](https://docs.docker.com/compose/gettingstarted/) to see the full details on this demo project
 
-### prerequisite
-- launch an instance
-- and login with your key pair
 
 ### STEP 0: install docker
+### launch an instance (ec2 or vm)
+- after launching instance, log in to the acount
+- ensure u allow all port from <my_ip> on security group since we will be using different port
 
+# STAGE 2
+### install dependencies and docker on the machine
 
-```
- sudo apt-get remove docker docker-engine docker.io containerd runc
-```
+- install as a root user
 
-- apt-get might report that you have none of these packages installed.
--  Images, containers, volumes, and networks stored in /var/lib/docker/ 
-- aren’t automatically removed when you uninstall Docker.
--  If you want to start with a clean installation, and prefer to clean 
-- up any existing data, read the uninstall Docker Engine section.
+- note: always install through documentation page, updates might have been made on the installation to avoid error
 
+- installation steps for docker engine on ubuntu
 
-### Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+### a. Set up the repository
+- Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 
 ```
 sudo apt-get update
