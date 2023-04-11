@@ -2,6 +2,70 @@
 in this project, we will containerize a flask project in few steps
 
 goto [dockerdemo](https://docs.docker.com/compose/gettingstarted/) to see the full details on this demo project
+
+### prerequisite
+- launch an instance
+- and login with your key pair
+
+### STEP 0: install docker
+
+
+``
+ sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+
+- apt-get might report that you have none of these packages installed.
+-  Images, containers, volumes, and networks stored in /var/lib/docker/ 
+- aren’t automatically removed when you uninstall Docker.
+-  If you want to start with a clean installation, and prefer to clean 
+- up any existing data, read the uninstall Docker Engine section.
+
+### Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+
+```
+sudo apt-get update
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg
+```
+
+- Add Docker’s official GPG key:
+
+```
+sudo mkdir -m 0755 -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
+
+- Use the following command to set up the repository:
+
+```
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+
+```
+sudo apt-get update 
+```
+
+- Install Docker Engine, containerd, and Docker Compose.
+
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+- Verify that the Docker Engine installation is successful by running the hello-world image:
+
+```
+sudo docker run hello-world
+```
+
+***
+
+
 ### STEP 1: create the app
 
 ```
