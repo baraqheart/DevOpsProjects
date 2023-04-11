@@ -10,7 +10,7 @@ goto [dockerdemo](https://docs.docker.com/compose/gettingstarted/) to see the fu
 ### STEP 0: install docker
 
 
-``
+```
  sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
@@ -19,6 +19,7 @@ goto [dockerdemo](https://docs.docker.com/compose/gettingstarted/) to see the fu
 - aren’t automatically removed when you uninstall Docker.
 -  If you want to start with a clean installation, and prefer to clean 
 - up any existing data, read the uninstall Docker Engine section.
+
 
 ### Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 
