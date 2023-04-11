@@ -125,7 +125,7 @@ sudo -i
 yum update -y
 yum install epel-release -y
 
-
+```
 
 
 ### 5. setting up web server
@@ -149,17 +149,23 @@ vim /etc/nginx/sites-available/vproapp
 
 we will create all neccesary settings to start up and deploy the app and provision it in the vagrant file
 
-`vim memcached.sh` and copy the code this file [memc](https://github.com/baraqheart/HandsOn/blob/main/project_3/memcache.sh)
-`vim rabbitmq.sh` and copy the code this file [rabbitmq](https://github.com/baraqheart/HandsOn/blob/main/project_3/rabbitmq.sh)
-`vim mysql.sh` and copy the code this file [mysql](https://github.com/baraqheart/HandsOn/blob/main/project_3/mysql.sh)
-`vim resource.properties` and copy the code this file [app](https://github.com/baraqheart/HandsOn/blob/main/project_3/application.properties) 
-`vim nginx.sh` and copy the code this file [nginx]https://github.com/baraqheart/HandsOn/blob/main/project_3/nginx.sh()
-`vim tomcat.sh` and copy the code this file [tomcat](https://github.com/baraqheart/HandsOn/blob/main/project_3/tomcat.sh)
+1. `vim memcached.sh` and copy the code this file [memc](https://github.com/baraqheart/HandsOn/blob/main/project_3/memcache.sh)
 
-`vim Vagrantfile` and copy the code this file [vagrantf](https://github.com/baraqheart/HandsOn/blob/main/project_3/Vagrantfile)
+2. `vim rabbitmq.sh` and copy the code this file [rabbitmq](https://github.com/baraqheart/HandsOn/blob/main/project_3/rabbitmq.sh)
 
-and now you can  power up your machines all preprovisioned
-`vagrant up`
+3. `vim mysql.sh` and copy the code this file [mysql](https://github.com/baraqheart/HandsOn/blob/main/project_3/mysql.sh)
+
+4. `vim resource.properties` and copy the code this file [app](https://github.com/baraqheart/HandsOn/blob/main/project_3/application.properties) 
+
+5. `vim nginx.sh` and copy the code this file [nginx](https://github.com/baraqheart/HandsOn/blob/main/project_3/nginx.sh)
+
+6. `vim tomcat.sh` and copy the code this file [tomcat](https://github.com/baraqheart/HandsOn/blob/main/project_3/tomcat.sh)
+
+7. `vim Vagrantfile` and copy the code this file [vagrantf](https://github.com/baraqheart/HandsOn/blob/main/project_3/Vagrantfile)
+
+and now you can  power up your machines all preprovisioned with `vagrant up`
+
+
 
 
 
