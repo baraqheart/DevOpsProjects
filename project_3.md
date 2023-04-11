@@ -148,8 +148,19 @@ vim /etc/nginx/sites-available/vproapp
 # part 2: Automate the Deployment of a multi-tier application Locally
 
 we will create all neccesary settings to start up and deploy the app and provision it in the vagrant file
-`vim 
-`vim Vagrantfile`
+
+`vim memcached.sh` and copy the code this file [memc](https://github.com/baraqheart/HandsOn/blob/main/project_3/memcache.sh)
+`vim rabbitmq.sh` and copy the code this file [rabbitmq](https://github.com/baraqheart/HandsOn/blob/main/project_3/rabbitmq.sh)
+`vim mysql.sh` and copy the code this file [mysql](https://github.com/baraqheart/HandsOn/blob/main/project_3/mysql.sh)
+`vim resource.properties` and copy the code this file [app](https://github.com/baraqheart/HandsOn/blob/main/project_3/application.properties) 
+`vim nginx.sh` and copy the code this file [nginx]https://github.com/baraqheart/HandsOn/blob/main/project_3/nginx.sh()
+`vim tomcat.sh` and copy the code this file [tomcat](https://github.com/baraqheart/HandsOn/blob/main/project_3/tomcat.sh)
+
+`vim Vagrantfile` and copy the code this file [vagrantf](https://github.com/baraqheart/HandsOn/blob/main/project_3/Vagrantfile)
+
+and now you can  power up your machines all preprovisioned
+`vagrant up`
+
 
 
 
