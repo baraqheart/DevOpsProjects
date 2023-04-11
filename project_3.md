@@ -75,6 +75,8 @@ mysql_secure_installation
 #folllow all the command prompts and configure the database
 
 ```
+
+
 once you are done with this run `mysql -u root -p` enter your password and you are in, now exit `exit`
 
 we will run  `git clone ` to fetch our source code so as to initialize our database
@@ -104,12 +106,12 @@ to validate `ss -tunlp | grep 11211`
 
 `exit`
 
+
 ### 3. setup rabbitmq
 `vagrant ssh rmq01`
 ```
 sudo -i
 yum update -y
-
 
 ```
 
@@ -134,6 +136,7 @@ yum install epel-release -y
 we are in the final configuration, 
 log in to web server `vagrant ssh web01`
 
+
 ```
 sudo apt update && sudo apt upgrade -y
 sudo -i 
@@ -146,6 +149,7 @@ vim /etc/nginx/sites-available/vproapp
 
 
 # part 2: Automate the Deployment of a multi-tier application Locally
+
 
 we will create all neccesary settings to start up and deploy the app and provision it in the vagrant file
 
