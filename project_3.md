@@ -147,6 +147,11 @@ vim /etc/nginx/sites-available/vproapp
 
 # part 2: Automate the Deployment of a multi-tier application Locally
 
+we will create all neccesary settings to start up and deploy the app and provision it in the vagrant file
+`vim 
+`vim Vagrantfile`
+
+
 
 
 
