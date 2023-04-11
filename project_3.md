@@ -159,13 +159,15 @@ we will create all neccesary settings to start up and deploy the app and provisi
 
 3. `vim mysql.sh` and copy the code this file [mysql](https://github.com/baraqheart/HandsOn/blob/main/project_3/mysql.sh)
 
-4. `vim resource.properties` and copy the code this file [app](https://github.com/baraqheart/HandsOn/blob/main/project_3/application.properties) 
+4. `vim application.properties` and copy the code this file [app](https://github.com/baraqheart/HandsOn/blob/main/project_3/application.properties) 
 
 5. `vim nginx.sh` and copy the code this file [nginx](https://github.com/baraqheart/HandsOn/blob/main/project_3/nginx.sh)
 
 6. `vim tomcat.sh` and copy the code this file [tomcat](https://github.com/baraqheart/HandsOn/blob/main/project_3/tomcat.sh)
 
 7. `vim Vagrantfile` and copy the code this file [vagrantf](https://github.com/baraqheart/HandsOn/blob/main/project_3/Vagrantfile)
+
+8. git clone our application folder
 
 and now you can  power up your machines all preprovisioned with `vagrant up`
 
