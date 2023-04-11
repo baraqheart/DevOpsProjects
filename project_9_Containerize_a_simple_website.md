@@ -139,15 +139,22 @@ vim Dockerfile
 
 ```
 FROM ubuntu:latest
+
 LABEL "Author "="<yourname>"
 LABEL "Project"="crispy_kitchen"
+
 ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt update && apt install git -y
 RUN apt install apache2 -y
+
 CMD ["/usr/sbin/apache2ctl","-D", "FOREGROUND"]
+
 EXPOSE 80
+
 WORKDIR /var/www/html
 VOLUME /var/log/apache2
+
 ADD crispy.tar.gz /var/www/html
 #COPY crispy.tar.gz /var/www/html
 ```
@@ -168,3 +175,18 @@ docker  build -t <account_name>/crispy_kitchen .
 - run your image with
 
 `docker run -d -n crispysite -p 9080:80 <account_name>/crispy_kitchen`
+
+***
+![]()
+
+***
+![]()
+
+***
+![]()
+
+***
+![]()
+
+***
+![]()
