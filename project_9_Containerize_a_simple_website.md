@@ -18,7 +18,7 @@
 
 - installation steps for docker engine on ubuntu
 
-# a. Set up the repository
+### a. Set up the repository
 - Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 
 
@@ -33,7 +33,7 @@ sudo apt-get install \
  ```
  
 
-# b. Add Docker’s official GPG key:
+### b. Add Docker’s official GPG key:
 
 
 ```
@@ -41,7 +41,7 @@ sudo mkdir -m 0755 -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 ```
 
-# c.Use the following command to set up the repository: 
+### c.Use the following command to set up the repository: 
 
 ```
 echo \
@@ -49,19 +49,19 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-# update again
+### update again
 
 ```
 sudo apt-get update 
 ```
 
-# Install Docker Engine, containerd, and Docker Compose
+### Install Docker Engine, containerd, and Docker Compose
 
 ```
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-# after installation complete check to comfirm docker is active
+### after installation complete check to comfirm docker is active
 
 ```
 systemctl status docker
@@ -98,19 +98,19 @@ docker images #without adding sudo to the command
 mkdir images/crispy_kitchen
 ```
 
-# dowload a zip file for html templates from tooplate.com
+### dowload a zip file for html templates from tooplate.com
 
 ```
 wget https://www.tooplate.com/zip-templates/2129_crispy_kitchen.zip
 ```
 
-# install unzip if not available
+### install unzip if not available
 
 ```
 sudo apt install unzip
 ```
 
-# unzip files
+### unzip files
 
 ```
 unzip 2129_crispy_kitchen.zip
