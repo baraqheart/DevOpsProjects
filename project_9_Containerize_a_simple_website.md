@@ -155,7 +155,7 @@ EXPOSE 80
 WORKDIR /var/www/html
 VOLUME /var/log/apache2
 
-ADD crispy.tar.gz /var/www/html
+ADD crispy-kitchen.tar.gz /var/www/html
 #COPY crispy.tar.gz /var/www/html
 ```
 
@@ -169,7 +169,7 @@ ADD crispy.tar.gz /var/www/html
 - now build our image
 
 ```
-docker  build -t <account_name>/crispy_kitchen .
+docker build -t <account_name>/crispy_kitchen .
 ```
 
 - run your image with
