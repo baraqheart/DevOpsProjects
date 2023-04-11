@@ -111,16 +111,39 @@ Vagrant.configure("2") do |vm02|
    SHELL
 end
 ```
+***
+
+![image](https://github.com/baraqheart/HandsOn/blob/edc0288e278f12d58223d154891605352c0e9e1a/project_2/Capture.PNG)
 
 
 ***
 - lets run `vagrant up` to bring up our vm
+
+***
+![image](https://github.com/baraqheart/HandsOn/blob/edc0288e278f12d58223d154891605352c0e9e1a/project_2/a1.PNG)
+
+- we can ssh in to our machine `vagrant ssh` to validate
+
 - and then, we will now access our wordpress site via the web browser on ip addr 192.168.33.98
 
 
+![image](https://github.com/baraqheart/HandsOn/blob/edc0288e278f12d58223d154891605352c0e9e1a/project_2/a6.PNG)
+***
+
+![image](https://github.com/baraqheart/HandsOn/blob/edc0288e278f12d58223d154891605352c0e9e1a/project_2/a7.PNG)
+***
 
 
 
+***
+![image](https://github.com/baraqheart/HandsOn/blob/edc0288e278f12d58223d154891605352c0e9e1a/project_2/a2.PNG)
+***
+
+![image](https://github.com/baraqheart/HandsOn/blob/edc0288e278f12d58223d154891605352c0e9e1a/project_2/a3.PNG)
+***
+
+![image](https://github.com/baraqheart/HandsOn/blob/edc0288e278f12d58223d154891605352c0e9e1a/project_2/a4.PNG)
+***
 
 
-
+![image]()
