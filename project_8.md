@@ -1,4 +1,4 @@
-# Docker demo
+# Containerize a flask application
 in this project, we will containerize a flask project in few steps
 
 goto [dockerdemo](https://docs.docker.com/compose/gettingstarted/) to see the full details on this demo project
@@ -37,6 +37,11 @@ def hello():
     return 'Hello World! I have been seen {} times.\n'.format(count)
 ```
 
+***
+![images](https://github.com/baraqheart/HandsOn/blob/fdd0df8fe0e3fb2e34eaf06cf863c7f1ef7d095c/python/Screenshot%20from%202023-03-13%2011-24-04.png)
+
+![image2](https://github.com/baraqheart/HandsOn/blob/fdd0df8fe0e3fb2e34eaf06cf863c7f1ef7d095c/python/Screenshot%20from%202023-03-13%2011-28-50.png)
+
 - Create another file called requirements.txt in your project directory and paste the following code in:
 
 ```
@@ -60,6 +65,10 @@ EXPOSE 5000
 COPY . .
 CMD ["flask", "run"]
 ```
+
+***
+![img2](https://github.com/baraqheart/HandsOn/blob/fdd0df8fe0e3fb2e34eaf06cf863c7f1ef7d095c/python/Screenshot%20from%202023-03-13%2011-30-49.png)
+
 
 - this file interpretes to :
 - Build an image starting with the Python 3.7 image.
@@ -86,6 +95,12 @@ services:
     image: "redis:alpine"
 ```
 
+***
+
+![img2](https://github.com/baraqheart/HandsOn/blob/fdd0df8fe0e3fb2e34eaf06cf863c7f1ef7d095c/python/Screenshot%20from%202023-03-13%2011-41-56.png)
+
+
+
 The web service uses an image that’s built from the Dockerfile in the current directory.
 It then binds the container and the host machine to the exposed port, 8000. 
 This example service uses the default port for the Flask web server, 5000.
@@ -97,8 +112,24 @@ The redis service uses a public Redis image pulled from the Docker Hub registry.
 ```
 docker build -t .
 ```
+***
+![img](https://github.com/baraqheart/HandsOn/blob/fdd0df8fe0e3fb2e34eaf06cf863c7f1ef7d095c/python/Screenshot%20from%202023-03-13%2012-46-23.png)
+
 
 ```
  docker compose up
 ```
+![](https://github.com/baraqheart/HandsOn/blob/fdd0df8fe0e3fb2e34eaf06cf863c7f1ef7d095c/python/Screenshot%20from%202023-03-13%2013-06-48.png)
+
+### validate
+to check and see that our app has been containerized and now working properly
+go to the public ip of your ec2 or vm to check and now we can see its a success!
+
+***
+![](https://github.com/baraqheart/HandsOn/blob/fdd0df8fe0e3fb2e34eaf06cf863c7f1ef7d095c/python/Screenshot%20from%202023-03-13%2012-45-52.png)
+
+refresh the page 3times and make little changes to the app.py file you will see how dynamic it is
+
+![img3](https://github.com/baraqheart/HandsOn/blob/fdd0df8fe0e3fb2e34eaf06cf863c7f1ef7d095c/python/Screenshot%20from%202023-03-13%2013-05-49.png)
+
 
