@@ -65,7 +65,7 @@ COPY nginvprofile.conf /etc/nginx/conf.d/
 - we will copy the nginvprofile.conf file we just created in to the directory /etc/nginx/conf.d/
 
 
-d. ***create a Dockerfile for app ***
+d. ***create a Dockerfile for app***
 
 `vim Dockerfile`
 
