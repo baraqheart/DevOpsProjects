@@ -1,5 +1,6 @@
-# Launch an EC2 instance
+# Deploy a simple website on ec2 instance
 
+- Launch an Ec2 instance
 - enter the name of your instance
 - choose an AMI
 
@@ -22,14 +23,8 @@
 ![sg](https://github.com/baraqheart/HandsOn/blob/8f3c2035b029c9f0feb9bd63634f0f1df83cc5bf/project_4/a4.PNG)
 ***
 
-
-***
-****
-
-
-****
-
 - paste in the user data to install neccesary package that powers our website
+
 
 ```
 #!/bin/bash
@@ -68,6 +63,7 @@ systemctl restart httpd
 
 ![home](https://github.com/baraqheart/HandsOn/blob/8f3c2035b029c9f0feb9bd63634f0f1df83cc5bf/project_4/a9.PNG)
 
+***
 
 ## Load Balancer with EC2
 - we will 2 different website but will access them through load balancer
