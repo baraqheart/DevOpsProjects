@@ -67,6 +67,11 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 systemctl status docker
 ```
 
+***
+![image](https://user-images.githubusercontent.com/23409781/231494528-13433d0f-2b6b-450e-aaa4-9c00537383df.png)
+
+
+
 ```
 sudo service docker start
 sudo docker run hello-world
@@ -159,6 +164,11 @@ ADD crispy-kitchen.tar.gz /var/www/html
 #COPY crispy.tar.gz /var/www/html
 ```
 
+***
+check your code one more time before building it
+![verify](https://github.com/baraqheart/HandsOn/blob/main/project_9/project_9/a6.PNG?raw=true)
+
+
 - open your web browser and navigate to hub.docker.com site to create your docker account where your repository will be stored
 
 - login to docker from terminal
@@ -172,21 +182,20 @@ ADD crispy-kitchen.tar.gz /var/www/html
 docker build -t <account_name>/crispy_kitchen .
 ```
 
+***
+![imagebuildprocess](https://github.com/baraqheart/HandsOn/blob/main/project_9/project_9/a88.PNG?raw=true)
+
+
 - run your image with
 
 `docker run -d -n crispysite -p 9080:80 <account_name>/crispy_kitchen`
 
-***
-![]()
 
 ***
-![]()
+![ec2](https://github.com/baraqheart/HandsOn/blob/main/project_9/project_9/res1.PNG?raw=true)
 
-***
-![]()
 
-***
-![]()
 
+here is the final result, go to the i.p address on the instance to see the homepage
 ***
-![]()
+![homepage](https://github.com/baraqheart/HandsOn/blob/main/project_9/project_9/rs.PNG?raw=true)
