@@ -3,11 +3,11 @@
 ### 1. Launch an instance
 
 spin a vm and connect through ssh in to the machine
-install docker on the machine
+install docker on the machine, check this page for steps [docker_install](https://github.com/baraqheart/DevOpsProjects/blob/a825d9f2bae4b83848b1133d81d9c5cb807b25fe/project_9_Containerize_a_simple_website.md)
 
 ### 2. containerize the application
  
-- ***create a Dockerfile for database mysql***
+a. ***create a Dockerfile for database mysql***
 
 `vim Dockerfile`
 
@@ -26,7 +26,7 @@ ADD db_backup.sql docker-entrypoint-initdb.d/db_backup.sql
 - we also labeled our project passing the project name and the author.
 - we set environmental variable for root pass to vprodbpass and database as 
 
-- ***create a configuration file for nginx***
+b. ***create a configuration file for nginx***
 
 `vim nginvprofile.conf`
 
@@ -47,7 +47,7 @@ location / {
 - here, nginx servers as our load balancer for our application
 
 
-- ***create a Dockerfile for web***
+c. ***create a Dockerfile for web***
 
 `vim Dockerfile`
 
@@ -65,11 +65,11 @@ COPY nginvprofile.conf /etc/nginx/conf.d/
 - we will copy the nginvprofile.conf file we just created in to the directory /etc/nginx/conf.d/
 
 
-- ***create a Dockerfile for app ***
+d. ***create a Dockerfile for app ***
 
 `vim Dockerfile`
 
-``
+```
 FROM tomcat:8-jre11
 LABEL "project"="vprofile-project"
 LABEL "Author"="Baraqheart"
@@ -145,6 +145,8 @@ cp -r target docker-files/app/
 - open your prefered IDE, I use vscode
 - and save it as docker-compose.yml, and paste the code below
 
+***
+
 ```
 
 version: '3'
@@ -186,7 +188,7 @@ volumes:
   vproappdata: {}
 
 ```
-
+***
 - now to run our app, in the background
   
 ` docker-compose up -d `
