@@ -195,10 +195,23 @@ volumes:
 
 go to the browser and we have this
 
+![imagebuild](https://github.com/baraqheart/HandsOn/blob/main/multisite/Screenshot%20from%202023-04-01%2007-16-15.png?raw=true)
+
+`docker images` this shows you the list of images
+![imagelist](https://github.com/baraqheart/HandsOn/blob/main/multisite/Screenshot%20from%202023-03-29%2009-05-26.png?raw=true)
+
+check the running processes
+![dockerps](https://github.com/baraqheart/HandsOn/blob/main/multisite/Screenshot%20from%202023-04-01%2009-37-57.png?raw=true)
 
 
 
+### Saving our images to dockerhub
+login to your dockerhub account from the terminal `docker login` and enter your username and password
+***
+`docker push <account_name>/<imagename:tag>`
 
+
+![dockerhub](https://github.com/baraqheart/HandsOn/blob/main/multisite/Screenshot%20from%202023-04-01%2009-45-02.png?raw=true)
 
 
 
