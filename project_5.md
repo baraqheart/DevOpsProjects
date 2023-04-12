@@ -1,5 +1,5 @@
 
-# Hosting a static page on s3 
+# Hosting a static website on s3 
 
 Amazon S3 (Simple Storage Service) is a highly scalable object storage service that allows you to store and retrieve data from anywhere on the web. It provides developers and IT teams with secure, durable, and highly available object storage. Here are some key features of Amazon S3:
 1.	***Scalability***: Amazon S3 can handle any amount of data and can scale to support growing workloads. It also offers automatic scaling of storage resources to meet your needs.
