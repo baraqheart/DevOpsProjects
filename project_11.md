@@ -12,6 +12,9 @@ allow http on port 80 and also custom port 8080  from any ip
 we will launch our instance to install jenkins on the server
 select existing security group we created and insert the scipt below in the user data
 
+***
+![ec2](https://github.com/baraqheart/HandsOn/blob/main/project_11/j2.PNG)
+
 ```
 #!/bin/bash
 
@@ -30,3 +33,45 @@ sudo apt-get install jenkins -y
 
 when the machine is up, you can always confirm what script is in the user data by running 
 `curl http://169.254.169.254/latest/user-data` this will fetch the user data on your machine
+
+
+this is the directory where jenkins files are stored once you confirm the successful installation of jenkins
+
+```
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+sudo systemctl status jenkins
+```
+
+***
+![validate](https://github.com/baraqheart/HandsOn/blob/main/project_11/j1.PNG?raw=true)
+
+
+Now go to your browser and type the ip address of your machine on port 8080
+you will see this
+
+***
+![homepage](https://github.com/baraqheart/HandsOn/blob/main/project_11/j3.PNG)
+
+fill the form and save and continue to the dashboard 
+***
+![reg](https://github.com/baraqheart/HandsOn/blob/main/project_11/j4.PNG)
+
+welcome to jenkins dashboard, where majic hapens
+***
+![dashboard](https://github.com/baraqheart/HandsOn/blob/main/project_11/j5.PNG)
+
+
+launch a build process for an app through freestyle project
+![build](https://github.com/baraqheart/HandsOn/blob/main/project_11/j5.PNG)
+
+select a freestyle project for a start
+![build](https://github.com/baraqheart/HandsOn/blob/main/project_11/j6.PNG)
+
+![build](https://github.com/baraqheart/HandsOn/blob/main/project_11/j7.PNG)
+
+this is the workspace where jenkins store all the build files and artifacts
+![build](https://github.com/baraqheart/HandsOn/blob/main/project_11/jj.PNG)
+
+here is the console to monitor the logs
+![build](https://github.com/baraqheart/HandsOn/blob/main/project_11/j8.PNG)
