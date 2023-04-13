@@ -18,14 +18,20 @@ select existing security group we created and insert the scipt below in the user
 ```
 #!/bin/bash
 
+
+#this updates and install dependencies: jdk and maven
 sudo apt update
-sudo apt install open-jdk-8jdk -y
+sudo apt install openjdk-11-jdk -y
 sudo apt install maven -y
+
+#gets link
 curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+#update and install jenkins
 sudo apt-get update
 sudo apt-get install jenkins -y
 
