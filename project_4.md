@@ -1,4 +1,4 @@
-# Deploy a simple website on ec2 instance
+# Deploy a simple website on ec2 instance with an application load balancer
 
 - Launch an Ec2 instance
 - enter the name of your instance
