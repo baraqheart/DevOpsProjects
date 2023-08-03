@@ -13,7 +13,7 @@
 - project_11 : CICD project with jenkins
 - project_12 : CICD project on AWS 1
 - project_13 : CICD project on AWS 2 
-- project_14 : build SErverless web application
+- project_14 : Deploy 2-Tier Application on AWS
 - project_15 : deploy jenkins, sonarqube and nexus on ec2 servers
 - project_16 : connect slack notification to project_nine
 - project_17 :
