@@ -51,7 +51,8 @@
    - webserver: web-key.pem
 
 5.   ***INSTANCES***
-    Launch instances in all the subnets
+  
+   - Launch instances in all the subnets
    - jumpserver : ubuntu OS
    - webserver : centOS
   
