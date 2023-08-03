@@ -28,7 +28,8 @@
 
    ![](https://github.com/baraqheart/HandsOn/blob/main/project_14/sub.PNG)
 
-4. ***SECURITY GROUPS***
+
+3. ***SECURITY GROUPS***
   - create security groups for:
 
    ***a- jumpserver***
@@ -49,8 +50,7 @@
    - create 2 seperate key pairs for both instances
    - jumserver: jump-key.pem
    - webserver: web-key.pem
-
-5.   ***INSTANCES***
+5. ***INSTANCES***
   
    - Launch instances in all the subnets
    - jumpserver : ubuntu OS
@@ -58,7 +58,7 @@
   
     ![](https://github.com/baraqheart/HandsOn/blob/main/project_14/webserver.PNG)
 
-5. ***create internet gateway***
+6. ***create internet gateway***
 
    - when we create our internet gateway, we will attach it to the vpc we created.
      By attaching an Internet Gateway to oour VPC, it enables resources within our VPC,
@@ -66,7 +66,7 @@
     
     ![](https://github.com/baraqheart/HandsOn/blob/main/project_14/igw.PNG)
 
-6. ***NAT gateways***
+7. ***NAT gateways***
 
    -  In a VPC, instances located in private subnets don't have a direct route to
       the internet through an Internet Gateway. To enable these instances to access
@@ -77,7 +77,7 @@
        ![]()
 
    
-7. ***ROUTE TABLES***
+8. ***ROUTE TABLES***
   
   - let create public and private route table
      route table is essentially a set of rules (routes) that determine where network
@@ -88,7 +88,7 @@
 
 
 
-8. Associate subnets with route tables
+9. Associate subnets with route tables
     associate the public subnets to the internet gateway 
     ![](https://github.com/baraqheart/HandsOn/blob/main/project_14/Capture.PNG)
 
@@ -100,7 +100,7 @@
 
    ![](https://github.com/baraqheart/HandsOn/blob/main/project_14/routes.PNG)
 
-9. login to the jump server
+10. login to the jump server
 
     - Now lets log in to our jump server
 
@@ -113,12 +113,12 @@
     ```
    ![](https://github.com/baraqheart/HandsOn/blob/main/project_14/scp.PNG)
 
-11. login to web server from the jump server
+12. login to web server from the jump server
     open gitbash and ssh in to the jump server to verify its working
     perfectly
     ![](https://github.com/baraqheart/HandsOn/blob/main/project_14/weblogin.PNG)
 
-12. ***Run the script***
+13. ***Run the script***
 
 ```
 #!/bin/bash
@@ -148,7 +148,7 @@ systemctl restart httpd
 
 ![](https://github.com/baraqheart/HandsOn/blob/main/project_14/httpd.PNG)
 
-13. validate
+14. validate
 
 check the httpd is active
 ![](https://github.com/baraqheart/HandsOn/blob/main/project_14/active.PNG)
