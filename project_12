@@ -1,11 +1,11 @@
-# AUTOMATE JENKINS LAUNCH USING TERRAFORM
+#AUTOMATE JENKINS LAUNCH USING TERRAFORM
 
-### 1. Install Terraform 
+###1. Install Terraform 
 
-- spin an ubuntu vm and connect through ssh in to the machine
-- to install terraform, visit the site [Terraform_install](https://developer.hashicorp.com/terraform/downloads)  to ensure you always have the updated
+-spin an ubuntu vm and connect through ssh in to the machine
+-to install terraform, visit the site [Terraform_install](https://developer.hashicorp.com/terraform/downloads)  to ensure you always have the updated
   version of the instalation code
-- choose the os, you want to install and follow along  
+-choose the os, you want to install and follow along  
 
 
 ```
@@ -20,11 +20,11 @@ sudo apt update && sudo apt install terraform
 - to verify terraform has been installed, try this
 `terraform -v`
 
-### 3. Jenkins Installation script
+###3. Jenkins Installation script
 
-- Before we start writing our terraform files we will write jenkins installation script goto the link [jenkins_install](https://www.jenkins.io/doc/book/installing/linux/) to get updated version always
-- note: we are on an ubuntu machine, so we will also  have jenkins ubuntu installation process.
-- lets create a file to save our script `touch jenkins.sh` and copy and paste the code below.
+-Before we start writing our terraform files we will write jenkins installation script goto the link [jenkins_install](https://www.jenkins.io/doc/book/installing/linux/) to get updated version always
+-note: we are on an ubuntu machine, so we will also  have jenkins ubuntu installation process.
+-lets create a file to save our script `touch jenkins.sh` and copy and paste the code below.
 
 ```
 #!/bin/bash
@@ -42,8 +42,8 @@ sudo apt-get update
 sudo apt-get install jenkins -y
 ```
 
-- The first part of the code after the shabang is updating and downloading dependencies for jenkins to function properly
-- and the last part is download and install jenkins on the server
+-The first part of the code after the shabang is updating and downloading dependencies for jenkins to function properly
+-and the last part is download and install jenkins on the server
 - 
 
 
