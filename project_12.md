@@ -21,7 +21,7 @@ sudo apt update && sudo apt install terraform
 - to verify terraform has been installed, try this
 `terraform -v`
 
-###3. Jenkins Installation script
+### 3. Jenkins Installation script
 
 - Before we start writing our terraform files we will write jenkins installation script goto the link [jenkins_install] 
   (https://www.jenkins.io/doc/book/installing/linux/) to get updated version always
