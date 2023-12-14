@@ -36,10 +36,10 @@ below are the names for our virtual machines
 - web01: the web server will serve as our load balancer to the app01 server
 - app01: the app server hosts our main application 
 
-we will start by powering up our machine after editing and configuring our Vagrantfile to this
+we will start by powering up our machine after editing and configuring our Vagrantfile, with this
 
 ```
-
+vagrant up
 ```
 
 majorly, what we are doing here is to configure each of the machines, specifying its hostname, operating system, RAM size and private ip address
