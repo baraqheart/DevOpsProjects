@@ -8,15 +8,15 @@
 - project_6: Deploy wordpress site on ec2 
 - project_7: lift and shift project for a multi tier website
 - project_8: Containerize a simple website and a flask application on virtual machine
-- project_9: containerize a multi-tier dynamic web application
-- project_10 : containarize an enterprise application application
+- project_9: containerize a static website
+- project_10 : containarize an enterprise application application: 3 -tier web application
 - project_11 : CICD project with jenkins
 - project_12 : CICD project on AWS 1
 - project_13 : CICD project on AWS 2 
 - project_14 : Deploy 2-Tier Application on AWS
 - project_15 : deploy jenkins, sonarqube and nexus on ec2 servers
 - project_16 : connect slack notification to project_nine
-- project_17 :
+- project_17 : Automate CICD project using terraform eith jenkins
 - project_18 :
 - project_19 :
 - project_20 :
