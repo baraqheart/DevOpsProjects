@@ -1,4 +1,4 @@
-# Containerize a multi-tier project 
+# Containerize a 3-tier Application
 
 ### 1. Launch an instance
 
