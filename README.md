@@ -16,7 +16,7 @@
 - project_14 : Deploy 2-Tier Application on AWS
 - project_15 : deploy jenkins, sonarqube and nexus on ec2 servers
 - project_16 : connect slack notification to project_nine
-- project_17 : Iac project using Terraform: static website
+- project_17 : Deploy 2-tier application using Terraform
 - project_18 : Automate 3-tier web application using Terrarm Iac
-- project_19 :  Devops end to end project using terraform, jenkins, sonarqube and nexus
-- project_20 :  Devops end to end project using terraform, jenkins, sonarqube, docker and Ecr
+- project_19 : Devops end to end project using terraform, jenkins, sonarqube and nexus
+- project_20 : Devops end to end project using terraform, jenkins, sonarqube, docker and Ecr
