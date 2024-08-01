@@ -1,5 +1,7 @@
 # DevOpsProjects
 
+### Beginner Level
+
 - project_1 : [Host a static website locally](https://github.com/baraqheart/DevOpsProjects/blob/main/project_1.md)
 - project_2 : [Host a wordpress site locally](https://github.com/baraqheart/DevOpsProjects/blob/main/project_2.md)
 - project_3 : [Automate the deployment of a multi-tier application locally](https://github.com/baraqheart/DevOpsProjects/blob/main/project_3.md)
@@ -20,3 +22,11 @@
 - project_18 : [Automate 3-tier web application using Terrarm Iac](https://github.com/baraqheart/DevOpsProjects/blob/main/project_18.md)
 - project_19 : Devops end to end project using terraform, jenkins, sonarqube and nexus
 - project_20 : Devops end to end project using terraform, jenkins, sonarqube, docker and Ecr
+
+
+### Advance Level
+- project_21: [Deploy 3-tier application using Terraform using modules](https://github.com/baraqheart/terraformProjects/tree/main/3tierModules/project_folder)
+- project_22: [Deploying Eks the hard way](https://baraqheart.medium.com/deploying-eks-the-hard-way-04164cc47d93)
+- project_23: [working with remote modules on terraform using GCP](https://baraqheart.medium.com/build-infrastructure-with-terraform-on-google-cloud-qwicklabschallenge-cd0cc8bbc3e1)
+- project_24: [Automate AKS Cluster Provisioning with Terraform](https://baraqheart.medium.com/automate-aks-cluster-provisioning-with-terraform-e87973c9b2ef)
+- project_25: 
