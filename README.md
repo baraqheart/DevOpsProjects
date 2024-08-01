@@ -5,7 +5,7 @@
 - project_3 : [Automate the deployment of a multi-tier application locally](https://github.com/baraqheart/DevOpsProjects/blob/main/project_3.md)
 - project_4 : [Deploy a simple website on ec2](https://github.com/baraqheart/DevOpsProjects/blob/main/project_4.md) 
 - project_5 : [Host a static website on s3](https://github.com/baraqheart/DevOpsProjects/blob/main/project_5.md)
-- project_6: [Deploy wordpress site on ec2][(](https://github.com/baraqheart/DevOpsProjects/blob/main/project_6_Deploy_a_wordpress_site_on_ec2.md) 
+- project_6: [Deploy wordpress site on ec2](https://github.com/baraqheart/DevOpsProjects/blob/main/project_6_Deploy_a_wordpress_site_on_ec2.md) 
 - project_7: [lift and shift project for a multi tier website](https://github.com/baraqheart/DevOpsProjects/blob/main/project_7.md)
 - project_8: [Containerize a flask application on virtual machine](https://github.com/baraqheart/DevOpsProjects/blob/main/project_8.md)
 - project_9: [containerize a static website](https://github.com/baraqheart/DevOpsProjects/blob/main/project_6_Deploy_a_wordpress_site_on_ec2.md)
