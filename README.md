@@ -1,6 +1,6 @@
 # DevOpsProjects
 
-### Beginner Level
+### Beginner Level 
 
 - project_1 : [Host a static website locally](https://github.com/baraqheart/DevOpsProjects/blob/main/project_1.md)
 - project_2 : [Host a wordpress site locally](https://github.com/baraqheart/DevOpsProjects/blob/main/project_2.md)
@@ -29,4 +29,6 @@
 - project_22: [Deploying Eks the hard way](https://baraqheart.medium.com/deploying-eks-the-hard-way-04164cc47d93)
 - project_23: [working with remote modules on terraform using GCP](https://baraqheart.medium.com/build-infrastructure-with-terraform-on-google-cloud-qwicklabschallenge-cd0cc8bbc3e1)
 - project_24: [Automate AKS Cluster Provisioning with Terraform](https://baraqheart.medium.com/automate-aks-cluster-provisioning-with-terraform-e87973c9b2ef)
-- project_25: 
+- project_25: [deploy 10 microservices using helm charts](https://github.com/baraqheart/ecommerceApp)
+
+- project_26[devops end to end project 1 java]()
